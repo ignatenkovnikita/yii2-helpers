@@ -14,6 +14,7 @@ class StringHelperTest extends PHPUnit_Framework_TestCase
     public function testReplaceString(){
         $this->assertEquals(StringHelper::replaceSymbol('АЗ'), 'A3');
         $this->assertEquals(StringHelper::replaceSymbol('АЕНКМрхТСз'), 'AEHKMPXTC3');
+        $this->assertEquals(StringHelper::replaceSymbol('АЕНКМрхТСз '), 'AEHKMPXTC3');
     }
 
     public function testTruncateByPrefix(){
